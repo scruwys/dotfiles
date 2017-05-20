@@ -12,18 +12,21 @@ brew tap caskroom/versions
 # Install base applications...
 
 apps=(
-  anaconda
-  firefox
-  flux
-  google-chrome
-  google-drive
-  quicksilver
-  slack
-  spotify
-  sublime-text
-  transmit
-  virtualbox
-  vlc
+  # airmail
+  # firefox
+  # flux
+  # google-chrome
+  # google-drive
+  # iterm2
+  # java
+  # quicksilver
+  # slack
+  # spotify
+  # sublime-text
+  # transmit
+  # vagrant
+  # virtualbox
+  # vlc
 )
 
 brew cask install "${apps[@]}"

@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+alias zrc='source ~/.zshrc'
 
 # Git-related aliases...
 alias gc='git commit'
@@ -8,3 +9,6 @@ alias gs='git status -sb'
 
 alias gco='git checkout'
 alias gac='git add -A && git commit -m'
+
+# Sublime Text 3
+alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"

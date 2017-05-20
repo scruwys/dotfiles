@@ -1,7 +1,7 @@
 # !/usr/bin/env bash
 
-if ! is-executable ruby -o ! is-executable curl -o ! is-executable git; then
-  echo "Skipped: Homebrew (not found: ruby, curl and/or git)"
+if ! is-executable ruby -o ! is-executable curl -o; then
+  echo "Skipped: Homebrew (not found: ruby and/or curl)"
   return
 fi
 
@@ -20,8 +20,19 @@ brew upgrade
 
 # Install base packages...
 
+brew install git
+
 apps=(
   wget
+  battery
+  coreutils
+  dockutil
+  ffmpeg
+  imagemagick
+  mysql
+  awscli
+  unrar
+  the_silver_searcher
 )
 
 brew install "${apps[@]}"
