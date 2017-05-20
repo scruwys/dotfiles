@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# Create a new directory and enter it
+function mkd() {
+    mkdir -p "$@" && cd "$_";
+}
+
+# Check if executable exists
+function is-executable() {
+  local BIN=$(command -v "$1" 2>/dev/null)
+  if [[ ! $BIN == "" && -x $BIN ]]; then true; else false; fi
+}
