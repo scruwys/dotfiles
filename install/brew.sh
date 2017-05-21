@@ -29,6 +29,7 @@ apps=(
   dockutil
   ffmpeg
   nvm
+  shpotify
   imagemagick
   mysql
   awscli

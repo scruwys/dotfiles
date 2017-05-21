@@ -7,6 +7,6 @@ function mkd() {
 
 # Check if executable exists
 function is-executable() {
-  local BIN=$(command -v "$1" 2>/dev/null)
-  if [[ ! $BIN == "" && -x $BIN ]]; then true; else false; fi
+    local BIN=$(command -v "$1" 2>/dev/null)
+    if [[ ! $BIN == "" && -x $BIN ]]; then true; else false; fi
 }
