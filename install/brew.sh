@@ -28,6 +28,7 @@ apps=(
   coreutils
   dockutil
   ffmpeg
+  nvm
   imagemagick
   mysql
   awscli

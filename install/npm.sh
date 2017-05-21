@@ -5,14 +5,15 @@ if ! is-executable brew -o ! is-executable git; then
   return
 fi
 
+brew install node
+brew install npm
+
 Install nvm and node...
-brew install nvm
-nvm install $1
 
 Install base packages...
 
 packages=(
-  bower
+  yarn
   gulp
 )
 

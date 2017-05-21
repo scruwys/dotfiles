@@ -1,4 +1,4 @@
-!/usr/bin/env bash
+# !/usr/bin/env bash
 
 if ! is-executable brew; then
   echo "Skipping: Homebrew-Cask (not found: brew)"
@@ -12,21 +12,20 @@ brew tap caskroom/versions
 # Install base applications...
 
 apps=(
-  # airmail
-  # firefox
-  # flux
-  # google-chrome
-  # google-drive
-  # iterm2
-  # java
-  # quicksilver
-  # slack
-  # spotify
-  # sublime-text
-  # transmit
-  # vagrant
-  # virtualbox
-  # vlc
+  cinch
+  firefox
+  flux
+  google-chrome
+  google-drive
+  java
+  quicksilver
+  slack
+  spotify
+  sublime-text
+  transmit
+  vagrant
+  virtualbox
+  vlc
 )
 
 brew cask install "${apps[@]}"
