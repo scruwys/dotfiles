@@ -1,0 +1,14 @@
+// SublimeLinter Settings - User
+{
+  "linters": {
+    "pycodestyle": {
+      "args": [
+        "--max-complexity", "-1",
+        "--max-line-length", "120",
+        "--ignore", "E731,E402,C0103"
+      ],
+      "disable": false,
+      "python": null
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "color_scheme": "Packages/User/SublimeLinter/Mariana (SL).tmTheme",
+    "enable_tab_scrolling": false,
+    "ensure_newline_at_eof_on_save": true,
+    "font_size": 11,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "origami_auto_close_empty_panes": true,
+    "scroll_past_end": true,
+    "tab_size": 4,
+    "theme": "Default.sublime-theme",
+    "translate_tabs_to_spaces": true
+}

@@ -4,10 +4,6 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$PATH:$HOME/bin
 
-# References...
-export PATH=/usr/local/anaconda3/bin:"$PATH"
-[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM
-
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 

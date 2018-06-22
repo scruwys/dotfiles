@@ -12,7 +12,6 @@ brew tap caskroom/versions
 # Install base applications...
 
 apps=(
-  anaconda
   cinch
   firefox
   flux

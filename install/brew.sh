@@ -24,17 +24,20 @@ brew install git
 
 apps=(
   wget
+  docker
   battery
   coreutils
   dockutil
   ffmpeg
   nvm
   shpotify
-  imagemagick
   mysql
   awscli
   unrar
-  the_silver_searcher
+  vim
 )
 
 brew install "${apps[@]}"
+brew install imagemagick --with-webp
+
+brew cleanup

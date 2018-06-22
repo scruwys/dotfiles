@@ -4,14 +4,45 @@ alias zrc='source ~/.zshrc'
 
 alias rr="rm -rf"
 
-# Git-related aliases...
-alias g='g'
-alias gc='git commit'
-alias gb='git branch'
-alias gs='git status -sb'
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
 
-alias gco='git checkout'
-alias gac='git add -A && git commit -m'
+# Open the pwd in the Finder
+alias here='open .'
 
 # Sublime Text 3
 alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
+
+# Chrome
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec ${SHELL} -l"
+
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
+
+# Intuitive map function
+# For example, to list all directories that contain a certain file:
+# find . -name .gitattributes | map dirname
+alias map="xargs -n1"
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+
+# IP addresses
+alias ip="curl ipinfo.io"
+alias localip="ipconfig getifaddr en0"
+
+# Kill process with name
+# for pid in $(ps -ef | awk '/dag_name/ {print $2}'); do kill -9 $pid; done`
+
+# Lock the screen (when going AFK)
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# Docker
+alias d='docker $*'
+alias d-c='docker-compose $*'
+
+# Pipe my public key to my clipboard.
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"

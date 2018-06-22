@@ -5,12 +5,12 @@ if ! is-executable brew -o ! is-executable git; then
   return
 fi
 
+# Install nvm and node...
+
 brew install node
 brew install npm
 
-Install nvm and node...
-
-Install base packages...
+# Install base packages...
 
 packages=(
   yarn
